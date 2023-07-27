@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" centent="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio</title>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo">Protfolio</a>
+            <i class='bx bx-menu' id="menu-icon"></i>
+
+            <nav class="navbar">
+                <a href="#home" class="active">Home</a>
+                <a href="#about">About</a>
+                <a href="#service">Known</a>
+                <a href="#sportfolio">Project</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </header>
+        <section class="home" id="home">
+            <div class="home-content">
+                <h3>Hello,Its Me</h3>
+                <h1>R GNANASEKAR</h1> 
+                <h3> And I'm a <span>Computer Science Engineering</span></h3>
+                <p>As a fresher I am seeking for a position in orgaization where I can learn new skills and gain knowledge</p>
+                <div class="social-media">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-twitter' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram-alt' ></i></a>
+                    <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                </div>
+                <a href="#" class="btn">Download CV</a>
+            </div>
+            <div class="home-img">
+                <img src="gnana.jpg" alt="gnana" width="200" >
+            </div>
+        </section>
+        <section class="about" id="about">
+            <div class="about-img">
+                <img src="gnana.jpg" alt="gnana" width="200">
+            </div>
+            <div class="about-content">
+                <h2 class="heading">About <span>Me</span></h2>
+                <h3>Computer Science Engineering</h3>
+                <p class="about-p">I am a GNANASEKAR<br>
+                   I am a passionate UI/UX Designer.I have completed the foundation of the UI/UX designing.
+                   A person with a passion and want to be creative in the design.<br>
+                   <span>Education</span><br>
+                   Sri Eshwar College of Engineering.<br>
+                   Bachelor of Engineering with CGPA <span> known</span><br>
+                   P A Polytechnic College.<br>
+                   Diploma in Computer Science Engineering with <span> 94%</span><br>
+                   Vighneswar Vidhya Mandhir Matric Higher Secondary School.<br>
+                Secondary School Leaving Certificate with <span> 89%</span><br>
+            </p>
+            <a href="#" class="btn">Read More</a>
+            </div>
+        </section>
+        <section class="services" id="services">
+            <h2 class="heading">Tech stacks <span> known</span></h2>
+            <div class="services-container">
+                <div class="services-box">
+                    <i class="bx bx-code-alt"></i>
+                    <h3>Web Development</h3>
+                    <p>Creating websites with html,css,javascript and for the database using Mysql.Creating websites as both static and dynamic form</p>
+                   
+                </div>
+                <div class="services-box">
+                    <i class='bx bxs-vector'></i>
+                   
+                    <h3>UI/UX Designing</h3>
+                 
+                    <p>Creating Mockups,wireframes,prototypes for the project.Approaching projects with unique design systems</p>
+                
+                </div>
+               
+            </div>
+    
+        </section>
+        <section class="portfolio" id="portfolio">
+            <h2 class="heading">Latest <span>Projects</span></h2>
+            <div class="portfolio-container">
+                <div class="portfolio-box">
+                    <img src="Organ_donation.jpg"  width="500" height="300" alt="img" >
+                    <div class="portfolio-layer">
+                          <h4>Web development</h4>
+                          <p>This project is about the donating the organ through online</p>
+                    </div>
+                </div>
+                <div class="portfolio-box">
+                    <img src="tic-tac-toe.jpg" alt="img" width="500" height="300">
+                    <div class="portfolio-layer">
+                          <h4>Reactjs</h4>
+                          <p>This project is about the  game Tic Tac Toe</p>
+                          </div>
+                </div>
+                </div>
+            </div>
+        </section>
+    
+            <section class="contact" id="contact">
+                <h2 class="heading">Contact <span>Me</span></h2>
+                <form name="submit-to-google-sheet"  >
+                    <div class="input-box">
+                        <input type="text" name="Name" placeholder="Full Name">
+                        <input type="email" name="Email" placeholder="Email Address">
+                    </div>
+                    <div class="input-box">
+                        <input type="number" name="Mobilenumber" placeholder="Mobile Number">
+                        <input type="text"name="emailsubject" placeholder="Email Subject">
+                    </div>
+                    <textarea name="message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <input type="submit" value="Send Message" class="btn">
+                    <h4 id="msg"></h4>
+                </form>
+                <span id="msg"></span>
+            </section>
+        <footer class="footer">
+            <div class="footer-text">
+                <p>Copyright &copy; 2023 by Gnana | All Rights Reserved.</p>
+            </div>
+            <div class="footer-iconTop">
+                <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+       
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+        
+        <script src="script.js"></script>
+       
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbwbfL3aPyZ02fnkxuuWgqVjj6W0ALVmCm7yioVBqYn51VB_HWQ5c7IEunz1f7xlnjXq/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg=document.getElementById("msg")
+          
+            form.addEventListener('submit', e => {
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => {msg.innerHTML="Message sent Successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+                .catch(error => console.error('Error!', error.message))
+           
+         })
+          </script>
+        <script src="script.js"></script>
+    </body>
+</html>
